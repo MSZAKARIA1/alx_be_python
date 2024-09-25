@@ -24,5 +24,5 @@ elif choose_temperature == "f":
     celsius = convert_to_celsius(value_to_be_converted)
     print(f"{value_to_be_converted}°F is {celsius:.2f}°C")
 else:
-    print("Invalid input. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
+    print("Invalid temperature. Please enter a numeric value.")
 
