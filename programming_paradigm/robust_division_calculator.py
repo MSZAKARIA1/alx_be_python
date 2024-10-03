@@ -18,6 +18,6 @@ def safe_divide(numerator, denominator):
         return f"Error: {e}"
 
     except ValueError:
-        return "Error: Please provide numeric inputs."
+        return "Error: Please enter numeric values only."
 
 
