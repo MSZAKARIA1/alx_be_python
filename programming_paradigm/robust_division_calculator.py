@@ -8,7 +8,7 @@ def safe_divide(numerator, denominator):
 
         # Check if denominator is zero
         if denominator == 0:
-            raise ZeroDivisionError("Cannot divide by zero.")
+            raise ZeroDivisionError("Error: Cannot divide by zero.")
 
         # Perform division
         result = numerator / denominator
