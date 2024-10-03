@@ -4,7 +4,7 @@ class BankAccount:
 
     def deposit(self, amount):
         if amount <= 0:
-            print("Deposit amount must be positive.")
+           ## print("Deposit amount must be positive.")
             return
         self.account_balance += amount
         print(f"Deposited: ${amount}")
