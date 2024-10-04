@@ -12,29 +12,18 @@ class BankAccount:
         else:
             return "Error: Deposit amount must be positive."
 
-    # def withdraw(self, amount):
-    #     """Withdraw the specified amount from the account, if funds are sufficient."""
-    #     if amount > 0:
-    #         if amount <= self.account_balance:
-    #             # Deduct amount from the account balance
-    #             self.account_balance -= amount
-    #             return f"Withdrew: ${amount:.2f}"
-    #         else:
-    #             print("Insufficient funds.")
-    #     else:
-    #         return "Error: Withdrawal amount must be positive."
     def withdraw(self, amount):
-    """Withdraw the specified amount from the account, if funds are sufficient."""
-    if amount > 0:
-        if amount <= self.account_balance:
-            # Deduct amount from the account balance
-            self.account_balance -= amount
-            return f"Withdrew: ${amount:.2f}"
+        """Withdraw the specified amount from the account, if funds are sufficient."""
+        if amount > 0:
+            if amount <= self.account_balance:
+                # Deduct amount from the account balance
+                self.account_balance -= amount
+                return f"Withdrew: ${amount:.2f}"
+            else:
+                print("Insufficient funds.")
         else:
-            return "Insufficient funds."  # Return message instead of print
-    else:
-        return "Error: Withdrawal amount must be positive."
-
+            return "Error: Withdrawal amount must be positive."
+    
 
     def display_balance(self):
         """Display the current account balance."""
