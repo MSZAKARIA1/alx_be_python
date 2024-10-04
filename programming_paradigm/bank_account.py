@@ -20,7 +20,7 @@ class BankAccount:
                 self.account_balance -= amount
                 return f"Withdrew: ${amount:.2f}"
             else:
-                return "Error: Insufficient funds."
+                return "Insufficient funds."
         else:
             return "Error: Withdrawal amount must be positive."
 
